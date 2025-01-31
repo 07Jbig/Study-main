@@ -27,7 +27,7 @@ function adicionar() {
 function sortear() {
   let sorteio = document.getElementById("lista-sorteio");
   embaralhar(amigos);
-  if (amigos.length == 1) {
+  if (amigos.length < 3) {
     alert(`É necessário ter mais pessoas para sortear.`);
   } else
     for (let i = 0; i < amigos.length; i++) {
