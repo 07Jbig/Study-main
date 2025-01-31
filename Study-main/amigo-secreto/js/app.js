@@ -7,6 +7,11 @@ function adicionar() {
   // trazer valor
   let nomeAmigos = nomeInput.value;
 
+  //impossibilitar mesma pessoa
+  if (amigos.includes(nomeInput.value)) {
+    alert("Você já adicionou esse amigo!");
+    return;
+  }
   // impossibilitar de colocar um nome vazio
   if (nomeAmigos == "") {
     alert("Insira um nome para adicionar a lista de amigos.");
