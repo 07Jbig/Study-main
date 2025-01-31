@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big's Host</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body class="body">
+    <main class="container main">
+      <img src="img/logo.svg" alt="Logo AluGames" />
+      <section class="divisor">
+        <div class="divisor__line"></div>
+        <img src="img/fade_bar.svg" alt="Visual bar" class="divisor__bar" />
+        <div class="divisor__line"></div>
+      </section>
+      <h1 class="page-title">
+        Host de <span class="page-title__emphasis">Big's</span>
+      </h1>
+      <section class="dashboard">
+        <ul class="dashboard__items">
+          <li class="dashboard__items__item" id="game-1">
+            <div class="dashboard__item__img">
+              <img
+                src="img/Deepwoken.jpg"
+                alt="Capa jogo Deepwoken"
+                width="300"
+                height="300"
+              />
+            </div>
+            <p class="dashboard__item__name">Deepwoken</p>
+            <a
+              onclick="alterarStatus(1)"
+              href="#"
+              class="dashboard__item__button"
+              >Alugar</a
+            >
+          </li>
+          <li class="dashboard__items__item" id="game-2">
+            <div class="dashboard__item__img">
+              <img
+                src="img/Rogue Lineage.jpg"
+                alt="Capa jogo Rogue Lineage"
+                width="300"
+                height="300"
+              />
+            </div>
+            <p class="dashboard__item__name">Rogue Lineage</p>
+            <a
+              onclick="alterarStatus(2)"
+              href="#"
+              class="dashboard__item__button"
+              >Alugar</a
+            >
+          </li>
+          <li class="dashboard__items__item" id="game-3">
+            <div class="dashboard__item__img">
+              <img
+                src="img/BloxFruits.jpg"
+                alt="Capa jogo BloxFruits"
+                width="300"
+                height="300"
+              />
+            </div>
+            <p class="dashboard__item__name">BloxFruits</p>
+            <a
+              onclick="alterarStatus(3)"
+              href="#"
+              class="dashboard__item__button"
+              >Alugar</a
+            >
+          </li>
+        </ul>
+      </section>
+      <img src="img/hachuras.svg" alt="Visual hachuras" class="hachuras" />
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
